@@ -1,0 +1,14 @@
+{
+  "name": "hehe",
+  "version": "1.0.0",
+  "description": "hehe",
+  "main": "script.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}

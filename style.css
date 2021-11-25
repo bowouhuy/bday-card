@@ -1,0 +1,28 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #3B4C52;
+    height:100%;
+    width:100%;
+    background: rgb(211, 211, 211);
+}
+
+.robot{
+    width:100px;
+}
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
+
+  .footerr {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
