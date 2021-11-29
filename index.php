@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><3</title>
+    <title>hbd y</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -181,8 +181,12 @@
     <rect x="10" y="475.571" fill="#fefae9" width="180" height="4" />
 </svg>
 <div class="text">
-  <h1>happy birthday!</h1>
-  <p>Nurika</p>
+  <h1 class="animate__animated animate__jackInTheBox animate__delay-4s">happy birthday!</h1>
+  <p class="animate__animated animate__zoomIn animate__delay-5s">Mbak Ikaaa</p>
+  <audio autoplay id="audio">
+  <source src="hbd.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
 </div>
 </main>
 
@@ -198,6 +202,10 @@
 <script src="confetti.js"></script>
 
 <script>
+function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
   // for starting the confetti 
   const start = () => {
         setTimeout(function() {
@@ -234,7 +242,7 @@
   // listen to events...
   mc.on("tap", function(ev) {
       console.log("asd");
-      
+      play();
       // var content = ""
       // document.getElementById('hammer').innerHTML = ""; 
   });
